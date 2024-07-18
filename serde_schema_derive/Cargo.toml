@@ -11,11 +11,12 @@ workspace = ".."
 proc-macro = true
 
 [dependencies]
-quote = "0.5.2"
-serde_derive_internals = "0.23.1"
-syn = "0.13.0"
+proc-macro2 = "1.0.86"
+quote = "1.0.36"
+serde_derive_internals = "0.29.1"
+syn = { version = "2.0", features = ["full"] }
 
 [dev-dependencies]
-serde = "1.0.39"
-serde_derive = "1.0.42"
+serde = "1.0.204"
+serde_derive = "1.0.204"
 serde_schema = { path = "../serde_schema" }
