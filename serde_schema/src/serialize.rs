@@ -64,7 +64,7 @@ impl SchemaSerialize for String {
 // ## Bytes
 
 #[cfg(feature = "bytes")]
-impl<'a> SchemaSerialize for Bytes<'a> {
+impl SchemaSerialize for Bytes {
     #[inline]
     fn schema_register<S: Schema>(_: &mut S) -> Result<S::TypeId, S::Error> {
         Ok(TypeId::BYTES)
